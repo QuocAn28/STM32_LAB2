@@ -1,0 +1,10 @@
+12:32:23 **** Incremental Build of configuration Debug for project LAB2_timer ****
+make -j8 all 
+arm-none-eabi-size  LAB2_timer.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7984	     32	   1648	   9664	   25c0	LAB2_timer.elf
+Finished building: default.size.stdout
+ 
+
+12:32:23 Build Finished. 0 errors, 0 warnings. (took 355ms)
+
