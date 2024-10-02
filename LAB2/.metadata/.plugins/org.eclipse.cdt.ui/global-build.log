@@ -1,4 +1,4 @@
-12:42:35 **** Incremental Build of configuration Debug for project LAB2_timer ****
+12:32:02 **** Incremental Build of configuration Debug for project LAB2_timer ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc -o "LAB2_timer.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\STM32\STM32LAB2\LAB2\LAB2_timer\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB2_timer.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
@@ -7,7 +7,151 @@ Finished building target: LAB2_timer.elf
 arm-none-eabi-size  LAB2_timer.elf 
 arm-none-eabi-objdump -h -S LAB2_timer.elf  > "LAB2_timer.list"
    text	   data	    bss	    dec	    hex	filename
-   7052	     12	   1668	   8732	   221c	LAB2_timer.elf
+   7984	     32	   1648	   9664	   25c0	LAB2_timer.elf
+arm-none-eabi-objcopy  -O ihex LAB2_timer.elf  "LAB2_timer.hex"
+arm-none-eabi-objcopy  -O binary LAB2_timer.elf  "LAB2_timer.bin"
+Finished building: default.size.stdout
+ 
+Finished building: LAB2_timer.hex
+Finished building: LAB2_timer.list
+Finished building: LAB2_timer.bin
+ 
+ 
+ 
+12:32:23 **** Incremental Build of configuration Debug for project LAB2_timer ****
+make -j8 all 
+arm-none-eabi-size  LAB2_timer.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7984	     32	   1648	   9664	   25c0	LAB2_timer.elf
+Finished building: default.size.stdout
+ 
+12:34:26 **** Incremental Build of configuration Debug for project LAB2_timer ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LAB2_timer.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\STM32\STM32LAB2\LAB2\LAB2_timer\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB2_timer.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB2_timer.elf
+ 
+arm-none-eabi-size  LAB2_timer.elf 
+arm-none-eabi-objdump -h -S LAB2_timer.elf  > "LAB2_timer.list"
+   text	   data	    bss	    dec	    hex	filename
+   8048	     32	   1648	   9728	   2600	LAB2_timer.elf
+arm-none-eabi-objcopy  -O ihex LAB2_timer.elf  "LAB2_timer.hex"
+Finished building: default.size.stdout
+arm-none-eabi-objcopy  -O binary LAB2_timer.elf  "LAB2_timer.bin"
+ 
+Finished building: LAB2_timer.hex
+Finished building: LAB2_timer.list
+Finished building: LAB2_timer.bin
+ 
+ 
+ 
+12:36:14 **** Incremental Build of configuration Debug for project LAB2_timer ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LAB2_timer.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\STM32\STM32LAB2\LAB2\LAB2_timer\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB2_timer.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB2_timer.elf
+ 
+arm-none-eabi-size  LAB2_timer.elf 
+arm-none-eabi-objdump -h -S LAB2_timer.elf  > "LAB2_timer.list"
+   text	   data	    bss	    dec	    hex	filename
+   8272	     28	   1644	   9944	   26d8	LAB2_timer.elf
+arm-none-eabi-objcopy  -O ihex LAB2_timer.elf  "LAB2_timer.hex"
+arm-none-eabi-objcopy  -O binary LAB2_timer.elf  "LAB2_timer.bin"
+Finished building: default.size.stdout
+ 
+Finished building: LAB2_timer.hex
+Finished building: LAB2_timer.bin
+Finished building: LAB2_timer.list
+ 
+ 
+ 
+14:15:20 **** Incremental Build of configuration Debug for project LAB2_timer ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/LAB2.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/LAB2.d" -MT"Core/Src/LAB2.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/LAB2.o"
+arm-none-eabi-gcc "../Core/Src/LAB2_Init.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/LAB2_Init.d" -MT"Core/Src/LAB2_Init.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/LAB2_Init.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/LAB2.c: In function 'updateClockBuffer':
+../Core/Src/LAB2.c:240:16: error: 'index' undeclared (first use in this function)
+  240 |         switch(index){
+      |                ^~~~~
+../Core/Src/LAB2.c:240:16: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:43: Core/Src/LAB2.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+14:15:55 **** Incremental Build of configuration Debug for project LAB2_timer ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/LAB2.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/LAB2.d" -MT"Core/Src/LAB2.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/LAB2.o"
+arm-none-eabi-gcc -o "LAB2_timer.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\STM32\STM32LAB2\LAB2\LAB2_timer\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB2_timer.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB2_timer.elf
+ 
+arm-none-eabi-size  LAB2_timer.elf 
+arm-none-eabi-objdump -h -S LAB2_timer.elf  > "LAB2_timer.list"
+   text	   data	    bss	    dec	    hex	filename
+   8248	     40	   1640	   9928	   26c8	LAB2_timer.elf
+arm-none-eabi-objcopy  -O ihex LAB2_timer.elf  "LAB2_timer.hex"
+Finished building: default.size.stdout
+arm-none-eabi-objcopy  -O binary LAB2_timer.elf  "LAB2_timer.bin"
+ 
+Finished building: LAB2_timer.hex
+Finished building: LAB2_timer.list
+ 
+Finished building: LAB2_timer.bin
+ 
+ 
+14:16:37 **** Incremental Build of configuration Debug for project LAB2_timer ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LAB2_timer.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\STM32\STM32LAB2\LAB2\LAB2_timer\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB2_timer.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB2_timer.elf
+ 
+arm-none-eabi-size  LAB2_timer.elf 
+arm-none-eabi-objdump -h -S LAB2_timer.elf  > "LAB2_timer.list"
+   text	   data	    bss	    dec	    hex	filename
+   8248	     40	   1640	   9928	   26c8	LAB2_timer.elf
+arm-none-eabi-objcopy  -O ihex LAB2_timer.elf  "LAB2_timer.hex"
+Finished building: default.size.stdout
+arm-none-eabi-objcopy  -O binary LAB2_timer.elf  "LAB2_timer.bin"
+ 
+Finished building: LAB2_timer.hex
+Finished building: LAB2_timer.list
+Finished building: LAB2_timer.bin
+ 
+ 
+ 
+15:02:15 **** Incremental Build of configuration Debug for project LAB2_timer ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/LAB2.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/LAB2.d" -MT"Core/Src/LAB2.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/LAB2.o"
+arm-none-eabi-gcc "../Core/Src/LAB2_Init.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/LAB2_Init.d" -MT"Core/Src/LAB2_Init.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/LAB2_Init.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LAB2_timer.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\STM32\STM32LAB2\LAB2\LAB2_timer\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB2_timer.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB2_timer.elf
+ 
+arm-none-eabi-size  LAB2_timer.elf 
+arm-none-eabi-objdump -h -S LAB2_timer.elf  > "LAB2_timer.list"
+   text	   data	    bss	    dec	    hex	filename
+   8248	     40	   1640	   9928	   26c8	LAB2_timer.elf
+arm-none-eabi-objcopy  -O ihex LAB2_timer.elf  "LAB2_timer.hex"
+arm-none-eabi-objcopy  -O binary LAB2_timer.elf  "LAB2_timer.bin"
+Finished building: default.size.stdout
+ 
+Finished building: LAB2_timer.hex
+Finished building: LAB2_timer.list
+Finished building: LAB2_timer.bin
+ 
+ 
+ 
+15:03:16 **** Incremental Build of configuration Debug for project LAB2_timer ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/LAB2.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/LAB2.d" -MT"Core/Src/LAB2.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/LAB2.o"
+arm-none-eabi-gcc "../Core/Src/LAB2_Init.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/LAB2_Init.d" -MT"Core/Src/LAB2_Init.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/LAB2_Init.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LAB2_timer.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\STM32\STM32LAB2\LAB2\LAB2_timer\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB2_timer.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB2_timer.elf
+ 
+arm-none-eabi-size  LAB2_timer.elf 
+arm-none-eabi-objdump -h -S LAB2_timer.elf  > "LAB2_timer.list"
+   text	   data	    bss	    dec	    hex	filename
+   7388	     40	   1664	   9092	   2384	LAB2_timer.elf
 arm-none-eabi-objcopy  -O ihex LAB2_timer.elf  "LAB2_timer.hex"
 arm-none-eabi-objcopy  -O binary LAB2_timer.elf  "LAB2_timer.bin"
 Finished building: default.size.stdout
@@ -18,7 +162,7 @@ Finished building: LAB2_timer.list
 Finished building: LAB2_timer.bin
  
  
-12:44:26 **** Incremental Build of configuration Debug for project LAB2_timer ****
+15:04:35 **** Incremental Build of configuration Debug for project LAB2_timer ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc -o "LAB2_timer.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\STM32\STM32LAB2\LAB2\LAB2_timer\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB2_timer.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
@@ -26,14 +170,36 @@ Finished building target: LAB2_timer.elf
  
 arm-none-eabi-size  LAB2_timer.elf 
 arm-none-eabi-objdump -h -S LAB2_timer.elf  > "LAB2_timer.list"
-arm-none-eabi-objcopy  -O ihex LAB2_timer.elf  "LAB2_timer.hex"
    text	   data	    bss	    dec	    hex	filename
-   8632	     20	   1700	  10352	   2870	LAB2_timer.elf
+   8564	     40	   1664	  10268	   281c	LAB2_timer.elf
+arm-none-eabi-objcopy  -O ihex LAB2_timer.elf  "LAB2_timer.hex"
 arm-none-eabi-objcopy  -O binary LAB2_timer.elf  "LAB2_timer.bin"
 Finished building: default.size.stdout
  
 Finished building: LAB2_timer.hex
+ 
 Finished building: LAB2_timer.list
+Finished building: LAB2_timer.bin
+ 
+ 
+15:07:30 **** Incremental Build of configuration Debug for project LAB2_timer ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/LAB2.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/LAB2.d" -MT"Core/Src/LAB2.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/LAB2.o"
+arm-none-eabi-gcc "../Core/Src/LAB2_Init.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/LAB2_Init.d" -MT"Core/Src/LAB2_Init.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/LAB2_Init.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LAB2_timer.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\STM32\STM32LAB2\LAB2\LAB2_timer\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB2_timer.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB2_timer.elf
+ 
+arm-none-eabi-size  LAB2_timer.elf 
+arm-none-eabi-objdump -h -S LAB2_timer.elf  > "LAB2_timer.list"
+   text	   data	    bss	    dec	    hex	filename
+   8632	     20	   1700	  10352	   2870	LAB2_timer.elf
+arm-none-eabi-objcopy  -O ihex LAB2_timer.elf  "LAB2_timer.hex"
+Finished building: default.size.stdout
+arm-none-eabi-objcopy  -O binary LAB2_timer.elf  "LAB2_timer.bin"
+ 
+Finished building: LAB2_timer.list
+Finished building: LAB2_timer.hex
  
 Finished building: LAB2_timer.bin
  
