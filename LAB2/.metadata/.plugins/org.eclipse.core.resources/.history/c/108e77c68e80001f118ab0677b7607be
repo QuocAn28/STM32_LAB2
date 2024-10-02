@@ -7,10 +7,10 @@
 
 
 #include <LAB2.h>
-int led_buffer[4]= {1, 2, 3, 4};
+int led_buffer[4]= {6,9,6,9};
 int BIN_array[8];
 uint8_t matrix_buffer [8] = {0x18 , 0x3C , 0x66 , 0xC3 , 0xFF , 0xFF , 0xC3 , 0xC3 };
-int hour = 17, minute= 9, second =50;
+
 void setEN(int num){
 	switch(num){
 	case 0:
@@ -230,11 +230,31 @@ void update7SEG(int index){
 		break;
 	}
 }
-void updateClockBuffer (){
+void updateClockBuffer (int index, int hour, int minute){
 	led_buffer[0] = hour/10;
 	led_buffer[1] = hour%10;
 	led_buffer[2] = minute/10;
 	led_buffer[3] = minute%10;
+	switch(index){
+		case 0:
+			setEN(0);
+			display7SEG(led_buffer[0]);
+			break;
+		case 1:
+			setEN(1);
+			display7SEG(led_buffer[1]);
+			break;
+		case 2:
+			setEN(2);
+			display7SEG(led_buffer[2]);
+			break;
+		case 3:
+			setEN(3);
+			display7SEG(led_buffer[3]);
+			break;
+		default:
+			break;
+	}
 }
 void turnonROW(int index){
 	switch(index){

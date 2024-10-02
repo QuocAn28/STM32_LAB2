@@ -110,7 +110,7 @@ int main(void)
 //	setTimer1(50);	setTimer2(50);				int status = 0;		//ex2
 //	setTimer1(100);	const int MAX_LED = 4;	 	int index_led = 0;	//ex3
 //	int index=0, MAX_LED=4, hour = 17, minute = 59, second =50;	//ex5
-	setTimer1(1);	setTimer2(1);		//ex7
+	setTimer1(1);	setTimer2(1);	int index=0, MAX_LED=4, hour = 17, minute = 59, second =48;		//ex7
 //	setTimer1(25);	setTimer2(100);	const int MAX_LED = 4;	 	int index_led = 0;	//ex8
 //	setTimer1(1);	setTimer2(8); const int MAX_LED_MATRIX = 8;	int index_led_matrix = 0; //ex9_ex10
 
@@ -124,9 +124,11 @@ int main(void)
 
 
 	  if(timer1_flag==1){									//runEX7
-		  setTimer1(100);
+		  setTimer1(25);
 		  updateClockBuffer ();
-		  HAL_GPIO_TogglePin(GPIOA, DOT);
+		  index++;
+		  if(index>=MAX_LED) index=0;
+
 		  second++;
 		  if(second >= 60){
 			  minute ++;
@@ -139,6 +141,10 @@ int main(void)
 		  if(hour >= 24){
 			  hour = 0;
 		  }
+	  }
+	  if(timer2_flag == 1){
+		  setTimer2(100);
+		  HAL_GPIO_TogglePin(GPIOA, DOT);
 	  }
 
 
