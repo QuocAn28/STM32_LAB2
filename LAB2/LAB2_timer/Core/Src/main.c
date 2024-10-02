@@ -104,7 +104,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
 
 	LAB2_Init();
-	setTimer0(100);
+//	setTimer0(100);
 
 //	setTimer1(50);	int status = 0; 								//ex1
 //	setTimer1(50);	setTimer2(50);				int status = 0;		//ex2
@@ -117,10 +117,10 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	  if(timer0_flag == 1){									//runEX0
-		  setTimer0(100);
-		  HAL_GPIO_TogglePin(GPIOA, LED_RED);
-	  }
+//	  if(timer0_flag == 1){									//runEX0
+//		  setTimer0(100);
+//		  HAL_GPIO_TogglePin(GPIOA, LED_RED);
+//	  }
 
 //	  if(timer1_flag == 1){									//runEX1
 //		  setTimer1(50);
@@ -316,23 +316,23 @@ static void MX_TIM2_Init(void)
 
 /* USER CODE BEGIN 4 */
 //const int MAX_LED = 4;	 	int index_led = 0; //ex4
-//int counter =1;
+int counter =1;
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
-		timer_run();
+//		timer_run();
 
-//	counter--;						//EX1
-//	if(counter<=0){
-//		counter = 100;
-//	}
-//		if(counter == 100){
-//			setEN(0);
-//			display7SEG(1);
-//		}
-//		if(counter == 50){
-//			setEN(1);
-//			display7SEG(2);
-//		}
+	counter--;						//EX1
+	if(counter<=0){
+		counter = 100;
+	}
+		if(counter == 100){
+			setEN(0);
+			display7SEG(1);
+		}
+		if(counter == 50){
+			setEN(1);
+			display7SEG(2);
+		}
 
 //	counter--;						//ex2
 //	if(counter <=0){

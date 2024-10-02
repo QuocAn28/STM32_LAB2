@@ -1,0 +1,22 @@
+12:17:45 **** Incremental Build of configuration Debug for project LAB2_timer ****
+make -j8 all 
+arm-none-eabi-gcc -o "LAB2_timer.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\STM32\STM32LAB2\LAB2\LAB2_timer\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB2_timer.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB2_timer.elf
+ 
+arm-none-eabi-size  LAB2_timer.elf 
+arm-none-eabi-objdump -h -S LAB2_timer.elf  > "LAB2_timer.list"
+   text	   data	    bss	    dec	    hex	filename
+   7936	     16	   1640	   9592	   2578	LAB2_timer.elf
+arm-none-eabi-objcopy  -O ihex LAB2_timer.elf  "LAB2_timer.hex"
+arm-none-eabi-objcopy  -O binary LAB2_timer.elf  "LAB2_timer.bin"
+Finished building: default.size.stdout
+ 
+Finished building: LAB2_timer.hex
+Finished building: LAB2_timer.list
+Finished building: LAB2_timer.bin
+ 
+ 
+ 
+
+12:17:46 Build Finished. 0 errors, 0 warnings. (took 805ms)
+
