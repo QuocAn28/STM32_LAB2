@@ -2,4 +2,4 @@
 ../Core/Src/main.c:142:6:SystemClock_Config	3
 ../Core/Src/main.c:179:13:MX_TIM2_Init	4
 ../Core/Src/main.c:222:6:HAL_TIM_PeriodElapsedCallback	1
-../Core/Src/main.c:289:6:Error_Handler	1
+../Core/Src/main.c:232:6:Error_Handler	1
