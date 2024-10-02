@@ -3,10 +3,10 @@
 ../Core/Src/LAB2.c:148:6:switch7SEGEX2	16	static
 ../Core/Src/LAB2.c:169:6:switch7SEG	16	static
 ../Core/Src/LAB2.c:198:6:update7SEG	16	static
-../Core/Src/LAB2.c:233:6:updateClockBuffer	24	static
-../Core/Src/LAB2.c:259:6:turnonROW	16	static
-../Core/Src/LAB2.c:343:6:turnonCOL	16	static
-../Core/Src/LAB2.c:362:6:updateLEDMatrix	16	static
-../Core/Src/LAB2.c:402:6:update_Shiftleft	16	static
-../Core/Src/LAB2.c:427:6:updateARRAY_BOTtoTOP	16	static
-../Core/Src/LAB2.c:438:6:updateLEDMatrix_EX10	16	static
+../Core/Src/LAB2.c:233:6:updateClockBuffer	4	static
+../Core/Src/LAB2.c:239:6:turnonROW	16	static
+../Core/Src/LAB2.c:323:6:turnonCOL	16	static
+../Core/Src/LAB2.c:342:6:updateLEDMatrix	16	static
+../Core/Src/LAB2.c:382:6:update_Shiftleft	16	static
+../Core/Src/LAB2.c:407:6:updateARRAY_BOTtoTOP	16	static
+../Core/Src/LAB2.c:418:6:updateLEDMatrix_EX10	16	static

@@ -3,10 +3,10 @@
 ../Core/Src/LAB2.c:148:6:switch7SEGEX2	5
 ../Core/Src/LAB2.c:169:6:switch7SEG	3
 ../Core/Src/LAB2.c:198:6:update7SEG	5
-../Core/Src/LAB2.c:233:6:updateClockBuffer	5
-../Core/Src/LAB2.c:259:6:turnonROW	9
-../Core/Src/LAB2.c:343:6:turnonCOL	1
-../Core/Src/LAB2.c:362:6:updateLEDMatrix	9
-../Core/Src/LAB2.c:402:6:update_Shiftleft	2
-../Core/Src/LAB2.c:427:6:updateARRAY_BOTtoTOP	1
-../Core/Src/LAB2.c:438:6:updateLEDMatrix_EX10	9
+../Core/Src/LAB2.c:233:6:updateClockBuffer	1
+../Core/Src/LAB2.c:239:6:turnonROW	9
+../Core/Src/LAB2.c:323:6:turnonCOL	1
+../Core/Src/LAB2.c:342:6:updateLEDMatrix	9
+../Core/Src/LAB2.c:382:6:update_Shiftleft	2
+../Core/Src/LAB2.c:407:6:updateARRAY_BOTtoTOP	1
+../Core/Src/LAB2.c:418:6:updateLEDMatrix_EX10	9
