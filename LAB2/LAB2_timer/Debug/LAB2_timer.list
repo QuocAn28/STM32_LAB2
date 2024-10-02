@@ -27,25 +27,25 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
  11 .ARM.attributes 00000029  00000000  00000000  00004014  2**0
                   CONTENTS, READONLY
- 12 .debug_info   000080f8  00000000  00000000  0000403d  2**0
+ 12 .debug_info   00008108  00000000  00000000  0000403d  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 13 .debug_abbrev 00001994  00000000  00000000  0000c135  2**0
+ 13 .debug_abbrev 00001980  00000000  00000000  0000c145  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 14 .debug_aranges 000009f8  00000000  00000000  0000dad0  2**3
+ 14 .debug_aranges 000009f8  00000000  00000000  0000dac8  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_rnglists 000007a9  00000000  00000000  0000e4c8  2**0
+ 15 .debug_rnglists 000007a9  00000000  00000000  0000e4c0  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_macro  000168ac  00000000  00000000  0000ec71  2**0
+ 16 .debug_macro  000168ac  00000000  00000000  0000ec69  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   0000b322  00000000  00000000  0002551d  2**0
+ 17 .debug_line   0000b30c  00000000  00000000  00025515  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    00082191  00000000  00000000  0003083f  2**0
+ 18 .debug_str    00082198  00000000  00000000  00030821  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000043  00000000  00000000  000b29d0  2**0
+ 19 .comment      00000043  00000000  00000000  000b29b9  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  0000284c  00000000  00000000  000b2a14  2**2
+ 20 .debug_frame  00002848  00000000  00000000  000b29fc  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line_str 00000051  00000000  00000000  000b5260  2**0
+ 21 .debug_line_str 00000051  00000000  00000000  000b5244  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -79,10 +79,10 @@ Disassembly of section .text:
  8000148:	080021e8 	.word	0x080021e8
 
 0800014c <turnonROW>:
-			break;
-		default:
-			break;
-	}
+	led_buffer[0] = hour/10;
+	led_buffer[1] = hour%10;
+	led_buffer[2] = minute/10;
+	led_buffer[3] = minute%10;
 }
 void turnonROW(int index){
  800014c:	b580      	push	{r7, lr}
@@ -944,11 +944,8 @@ int main(void)
 	setTimer0(100);
  80007c4:	2064      	movs	r0, #100	@ 0x64
  80007c6:	f000 f8d5 	bl	8000974 <setTimer0>
-//	setTimer1(50);	setTimer2(50);				int status = 0;		//ex2
-//	setTimer1(100);	const int MAX_LED = 4;	 	int index_led = 0;	//ex3
-//	int index=0, MAX_LED=4, hour = 17, minute = 59, second =50;	//ex5
-//	setTimer1(1); int index=0, MAX_LED=4, hour = 17, minute = 59, second =48;		//ex7
-//	setTimer1(25);	setTimer2(100);	const int MAX_LED = 4;	 	int index_led = 0;	//ex8
+
+
 	setTimer1(1);	setTimer2(8); const int MAX_LED_MATRIX = 8;	int index_led_matrix = 0; //ex9_ex10
  80007ca:	2001      	movs	r0, #1
  80007cc:	f000 f8e6 	bl	800099c <setTimer1>
@@ -974,10 +971,7 @@ int main(void)
  80007ec:	2120      	movs	r1, #32
  80007ee:	4812      	ldr	r0, [pc, #72]	@ (8000838 <main+0x90>)
  80007f0:	f000 fcfa 	bl	80011e8 <HAL_GPIO_TogglePin>
-//		  updateLEDMatrix(index_led_matrix);
-//		  index_led_matrix++;
-//		  if(index_led_matrix >=MAX_LED_MATRIX) index_led_matrix=0;
-//	  }
+	  }
 
 	  if(timer1_flag ==1){									//runEX10_bot to top
  80007f4:	4b11      	ldr	r3, [pc, #68]	@ (800083c <main+0x94>)
