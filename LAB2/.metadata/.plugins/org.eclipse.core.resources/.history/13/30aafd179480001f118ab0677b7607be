@@ -7,7 +7,7 @@
 
 
 #include <LAB2.h>
-int led_buffer[4]= {1,2,3,4};
+int led_buffer[4]= {6,9,6,9};
 int BIN_array[8];
 int second =50, minute = 9, hout =15;
 uint8_t matrix_buffer [8] = {0x18 , 0x3C , 0x66 , 0xC3 , 0xFF , 0xFF , 0xC3 , 0xC3 };
