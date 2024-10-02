@@ -16,7 +16,6 @@ extern int led_buffer[4];
 extern uint8_t matrix_buffer [8];
 extern int BIN_array[8];
 extern int i, j;
-extern int hour, minute, second;
 
 #define RESET 0
 #define SET 1
@@ -60,7 +59,7 @@ void update7SEG(int index);
 void display7SEG(int num);
 void switch7SEG(int status); //ex1
 void switch7SEGEX2(int status); //ex2
-void updateClockBuffer () ; //ex7
+void updateClockBuffer (int index, int hout, int minute) ; //ex7
 void updateLEDMatrix(int index);//ex9
 void turnonROW(int index);
 void turnonCOL(int matrix_buffer);
