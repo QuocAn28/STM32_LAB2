@@ -316,7 +316,7 @@ static void MX_TIM2_Init(void)
 
 /* USER CODE BEGIN 4 */
 //const int MAX_LED = 4;	 	int index_led = 0; //ex4
-int counter =1;
+//int counter =1;
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
 		timer_run();
