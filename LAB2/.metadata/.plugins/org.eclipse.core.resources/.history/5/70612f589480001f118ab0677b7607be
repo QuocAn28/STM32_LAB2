@@ -16,7 +16,7 @@ extern int led_buffer[4];
 extern uint8_t matrix_buffer [8];
 extern int BIN_array[8];
 extern int i, j;
-extern int second, hour, minute;
+extern second, hour, minute;
 
 #define RESET 0
 #define SET 1

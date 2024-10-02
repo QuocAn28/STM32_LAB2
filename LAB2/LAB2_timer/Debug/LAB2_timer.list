@@ -27,25 +27,25 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
  11 .ARM.attributes 00000029  00000000  00000000  00003020  2**0
                   CONTENTS, READONLY
- 12 .debug_info   00007f40  00000000  00000000  00003049  2**0
+ 12 .debug_info   00007f4c  00000000  00000000  00003049  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 13 .debug_abbrev 000018b2  00000000  00000000  0000af89  2**0
+ 13 .debug_abbrev 0000188a  00000000  00000000  0000af95  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 14 .debug_aranges 000009c0  00000000  00000000  0000c840  2**3
+ 14 .debug_aranges 000009c0  00000000  00000000  0000c820  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_rnglists 00000782  00000000  00000000  0000d200  2**0
+ 15 .debug_rnglists 00000782  00000000  00000000  0000d1e0  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_macro  00016701  00000000  00000000  0000d982  2**0
+ 16 .debug_macro  00016701  00000000  00000000  0000d962  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   0000ab7e  00000000  00000000  00024083  2**0
+ 17 .debug_line   0000ab68  00000000  00000000  00024063  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    000820ec  00000000  00000000  0002ec01  2**0
+ 18 .debug_str    000820f3  00000000  00000000  0002ebcb  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000043  00000000  00000000  000b0ced  2**0
+ 19 .comment      00000043  00000000  00000000  000b0cbe  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  000027a0  00000000  00000000  000b0d30  2**2
+ 20 .debug_frame  0000279c  00000000  00000000  000b0d04  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line_str 00000051  00000000  00000000  000b34d0  2**0
+ 21 .debug_line_str 00000051  00000000  00000000  000b34a0  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -794,10 +794,7 @@ int main(void)
 
 	LAB2_Init();
  800062a:	f7ff ffa9 	bl	8000580 <LAB2_Init>
-//	int index=0, MAX_LED=4, hour = 17, minute = 59, second =50;	//ex5
-//	setTimer1(1); int index=0, MAX_LED=4, hour = 17, minute = 59, second =48;		//ex7
-//	setTimer1(25);	setTimer2(100);	const int MAX_LED = 4;	 	int index_led = 0;	//ex8
-//	setTimer1(1);	setTimer2(8); const int MAX_LED_MATRIX = 8;	int index_led_matrix = 0; //ex9_ex10
+
 
   while (1)
  800062e:	bf00      	nop
@@ -1015,10 +1012,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
  800074a:	b082      	sub	sp, #8
  800074c:	af00      	add	r7, sp, #0
  800074e:	6078      	str	r0, [r7, #4]
-//		if(index_led >= MAX_LED) {
-//			index_led = 0;
-//		  }
-//	}
+
 
 	counter--;						//ex4
  8000750:	4b12      	ldr	r3, [pc, #72]	@ (800079c <HAL_TIM_PeriodElapsedCallback+0x54>)
