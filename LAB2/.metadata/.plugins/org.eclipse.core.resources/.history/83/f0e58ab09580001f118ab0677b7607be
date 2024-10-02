@@ -217,6 +217,63 @@ static void MX_TIM2_Init(void)
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
 		timer_run();
+
+//	counter--;						//EX1
+//	if(counter<=0){
+//		counter = 100;
+//	}
+//		if(counter == 100){
+//			setEN(0);
+//			display7SEG(1);
+//		}
+//		if(counter == 50){
+//			setEN(1);
+//			display7SEG(2);
+//		}
+
+//	counter--;						//ex2
+//	if(counter <=0){
+//		counter =200;
+//	}
+//	if(counter == 200 ){
+//		setEN(0);
+//		display7SEG(1);
+//	}
+//	if(counter == 150 ){
+//		setEN(1);
+//		display7SEG(2);
+//	}
+//	if(counter == 100 ){
+//		setEN(2);
+//		display7SEG(3);
+//	}
+//	if(counter == 50 ){
+//		setEN(3);
+//		display7SEG(0);
+//	}
+
+//	counter--;						//ex3
+//	if(counter <= 0) {
+//		counter =100;
+//		update7SEG(index_led);
+//		index_led++;
+//		if(index_led >= MAX_LED) {
+//			index_led = 0;
+//		  }
+//	}
+
+//	counter--;						//ex4
+//		if(counter <= 0) {
+//			counter =25;
+//			update7SEG(index_led);
+//			index_led++;
+//			if(index_led >= MAX_LED) {
+//				index_led = 0;
+//				HAL_GPIO_TogglePin(GPIOA, DOT);
+//			  }
+//		}
+
+
 }
 /* USER CODE END 4 */
 
