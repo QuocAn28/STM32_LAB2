@@ -106,8 +106,13 @@ int main(void)
 	LAB2_Init();
 	setTimer0(100);
 
-
+//	setTimer1(50);	int status = 0; 								//ex1
+//	setTimer1(50);	setTimer2(50);				int status = 0;		//ex2
+//	setTimer1(100);	const int MAX_LED = 4;	 	int index_led = 0;	//ex3
+//	int index=0, MAX_LED=4, hour = 17, minute = 59, second =50;	//ex5
 	setTimer1(1);	setTimer2(1);		//ex7
+//	setTimer1(25);	setTimer2(100);	const int MAX_LED = 4;	 	int index_led = 0;	//ex8
+//	setTimer1(1);	setTimer2(8); const int MAX_LED_MATRIX = 8;	int index_led_matrix = 0; //ex9_ex10
 
   while (1)
   {
@@ -229,6 +234,63 @@ static void MX_TIM2_Init(void)
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
 		timer_run();
+
+//	counter--;						//EX1
+//	if(counter<=0){
+//		counter = 100;
+//	}
+//		if(counter == 100){
+//			setEN(0);
+//			display7SEG(1);
+//		}
+//		if(counter == 50){
+//			setEN(1);
+//			display7SEG(2);
+//		}
+
+//	counter--;						//ex2
+//	if(counter <=0){
+//		counter =200;
+//	}
+//	if(counter == 200 ){
+//		setEN(0);
+//		display7SEG(1);
+//	}
+//	if(counter == 150 ){
+//		setEN(1);
+//		display7SEG(2);
+//	}
+//	if(counter == 100 ){
+//		setEN(2);
+//		display7SEG(3);
+//	}
+//	if(counter == 50 ){
+//		setEN(3);
+//		display7SEG(0);
+//	}
+
+//	counter--;						//ex3
+//	if(counter <= 0) {
+//		counter =100;
+//		update7SEG(index_led);
+//		index_led++;
+//		if(index_led >= MAX_LED) {
+//			index_led = 0;
+//		  }
+//	}
+
+//	counter--;						//ex4
+//		if(counter <= 0) {
+//			counter =25;
+//			update7SEG(index_led);
+//			index_led++;
+//			if(index_led >= MAX_LED) {
+//				index_led = 0;
+//				HAL_GPIO_TogglePin(GPIOA, DOT);
+//			  }
+//		}
+
+
 }
 /* USER CODE END 4 */
 
